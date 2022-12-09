@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.termsBlock {
+		margin-top: 10vh;
+		margin-right: 40vh;
+		margin-left: 40vh;
+
+		.termsContainer {
+			margin-bottom: 54px;
+
+			h3 {
+				font-size: 30px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+				letter-spacing: 1px;
+				padding-left: 40px;
+				margin-bottom: 23px;
+				position: relative;
+				font-style: normal;
+
+				&::after {
+					width: 25px;
+					height: 5px;
+					background: #fca702;
+					border-radius: 10px;
+					left: 0;
+					top: 50%;
+					-webkit-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+					transform: translateY(-50%);
+					position: absolute;
+					content: "";
+				}
+			}
+
+			p {
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 400;
+				color: #14212b;
+				line-height: 1.8;
+
+				ul {
+					padding-top: 20px;
+					li {
+						list-style: none;
+						padding-bottom: 15px;
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-size: 16px;
+						font-weight: 400;
+						color: #14212b;
+						line-height: 1.8;
+					}
+				}
+			}
+		}
+	}
+}

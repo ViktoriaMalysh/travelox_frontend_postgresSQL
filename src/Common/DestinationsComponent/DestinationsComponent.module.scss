@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+  .destinationsGrid {
+    margin-left: 40vh;
+    margin-right: 40vh;
+    margin-top: 40px;
+
+    .destinationsGridColumn {
+      .destinationsGridColumnDivImg1 {
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s;
+        margin-bottom: 25px;
+
+        .destinationsGridColumnDivImg {
+          border-radius: 15px;
+          overflow: hidden;
+          position: relative;
+          transition: all 0.5s;
+
+          &:hover {
+            transform: scale(1.1);
+
+            .destinationsGridButton {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+              to bottom,
+              transparent 0%,
+              rgba(0, 0, 0, 0.315) 100%
+            );
+            z-index: 2;
+          }
+
+          img {
+            width: max-content;
+            border-radius: 15px;
+            transition: all 0.5s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      .destinationsGridButton {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        padding: 0px;
+        padding-right: 15px;
+        line-height: 55px;
+        background: #fca702;
+        color: #fff !important;
+        border-radius: 50px;
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+        left: 50%;
+        font-size: 22px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+        transition: all 0.5s ease-in-out;
+        z-index: 100;
+      }
+
+      .destinationsGridColumnDiv {
+        position: absolute;
+        top: 70%;
+        left: 40px;
+        z-index: 100;
+
+        h3 {
+          color: #fff;
+          font-size: 30px;
+          margin: 0px;
+          font-weight: 600;
+          font-family: "Poppins", sans-serif;
+          line-height: 1.2;
+          text-align: left;
+        }
+
+        span {
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.8;
+          float: left;
+        }
+      }
+    }
+  }
+}

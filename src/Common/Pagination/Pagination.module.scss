@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.paginate {
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-flex;
+		text-decoration: none;
+		list-style: none;
+		color: #fff;
+	}
+
+	.pageLinkClassName,
+	.previousLinkClassName,
+	.nextLinkClassName {
+		color: #fff;
+	}
+
+	.pageClassName {
+		cursor: pointer;
+		width: 40px;
+		height: 40px;
+		border: none;
+		background: #051c55;
+		color: #fff;
+		margin: 0 4px;
+		border-radius: 10px !important;
+		padding: 5px 15px;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			background: #fca702;
+		}
+	}
+
+	.activeClassName {
+		background: #fca702;
+	}
+
+	.nextClassName,
+	.prevClassName {
+		color: #fff;
+		border: none;
+		background: #051c55;
+		margin: 0 4px;
+		border-radius: 10px !important;
+		padding: 5px 10px;
+		transition: all 0.5s ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			background: #fca702;
+		}
+	}
+}

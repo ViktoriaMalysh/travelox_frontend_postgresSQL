@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+  .accordion {
+    .accordionTitle {
+      background-color: red;
+      margin-bottom: 10px;
+    }
+
+    .accordionContent {
+      background-color: #fafe28;
+    }
+  }
+}

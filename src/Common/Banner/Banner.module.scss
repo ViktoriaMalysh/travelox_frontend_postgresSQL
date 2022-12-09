@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.tourPackageSegmentLeftImage {
+		border-radius: 15px;
+		max-height: 477px;
+		text-align: left;
+		padding: 30px;
+
+		img {
+			margin: -30px;
+			width: 361px;
+			height: 477px;
+			border-radius: 15px;
+		}
+
+		div {
+			max-width: 361px;
+			margin-top: -140px;
+			margin-left: -20px;
+			margin-right: -120px;
+
+			span {
+				color: #fca702;
+			}
+
+			h2 {
+				color: #ffffff;
+				display: block;
+				padding: 20px;
+			}
+
+			h2,
+			span {
+				font-size: 35px;
+				line-height: 50px;
+				font-family: "Playfair Display", sans-serif;
+				font-weight: 900;
+				text-shadow: 5px 9px rgb(0 0 0 / 10%);
+			}
+		}
+	}
+}

@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #fca702;
+
+:global(#app) {
+	.tourPackageSingleDivLoader {
+		padding: 100px;
+
+		.tourPackageSingleLoader {
+			color: #fca702;
+		}
+	}
+
+	.tourSingle {
+		margin-left: 39.5vh;
+		margin-right: 39vh;
+		margin-top: 100px;
+		position: relative;
+		margin-bottom: 150px;
+
+		.tourSingleSegment {
+			background: #fff;
+			border-radius: 10px;
+			height: max-content;
+			padding: 35px 30px;
+			display: block;
+			box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+			width: 361px;
+			float: left;
+			border: none;
+			text-transform: capitalize;
+			margin: 0;
+			margin-top: 0px;
+
+			h5 {
+				color: #1b1b1b;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+				font-size: 18px;
+				padding-top: 20px;
+				padding-bottom: 10px;
+			}
+
+			.tourSingleCheckbox {
+				display: block;
+				margin-bottom: 20px;
+				color: #1b1b1b;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+			}
+
+			label {
+				color: #999;
+				font-weight: 400;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+			}
+
+			.tourPackageFormField {
+				.inputDatePicker {
+					background-color: red;
+				}
+
+				button {
+					width: 100%;
+					height: 46px;
+					border: none;
+					background: #fca702;
+					color: #fff;
+					border-radius: 8px;
+					padding: 9px 0;
+					transition: all 0.5s ease-in-out;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1.8;
+					margin-top: 10px;
+
+					&:hover {
+						background: #102b3e;
+						color: #fff;
+					}
+				}
+
+				label {
+					color: #6c7592;
+					cursor: pointer;
+					font-weight: 400;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+					line-height: 1.8;
+				}
+
+				input {
+					padding: 10px 10px 10px 35px;
+					border-radius: 8px;
+					height: 46px;
+					color: #6c7592;
+					box-shadow: none;
+					display: block;
+					width: 100%;
+					font-weight: 400;
+					line-height: 1.5;
+					background-color: #fff;
+					background-clip: padding-box;
+					border: 1px solid #6c7592;
+					appearance: none;
+					transition: 0.5s;
+
+					&:focus {
+						border: 1px solid #fca702;
+					}
+
+					&::placeholder {
+						font-weight: 400;
+						font-family: "Roboto";
+						font-style: normal;
+						font-size: 16px;
+						line-height: 1.8;
+						color: #6c757d;
+					}
+				}
+			}
+		}
+
+		table {
+			border-radius: 15px;
+
+			.tourSingleTableCellLeft {
+				width: 300px;
+				padding-left: 30px;
+			}
+
+			.tourSingleTableCellRight {
+				padding-left: 45px;
+				position: relative;
+				display: block;
+				font-size: 17px;
+				font-weight: 500;
+				color: #888888;
+			}
+
+			.tourSingleIconTrue {
+				color: #198754 !important;
+				padding-right: 25px;
+			}
+
+			.tourSingleIconFalse {
+				color: #dc3545 !important;
+				padding-right: 25px;
+			}
+		}
+
+		.tourSingleDiv2 {
+			margin-top: 80px;
+			margin-bottom: 50px;
+
+			.tourSingleDiv2BlockEnd {
+				position: relative;
+				padding-left: 110px;
+				padding-bottom: 20px;
+
+				&::before {
+					position: absolute;
+					content: "";
+					width: 1px;
+					border-left: none;
+					height: 100%;
+					left: 35px;
+					top: 10px;
+					z-index: -1;
+				}
+			}
+
+			.tourSingleDiv2Block {
+				position: relative;
+				padding-left: 110px;
+				padding-bottom: 20px;
+
+				&::before {
+					position: absolute;
+					content: "";
+					width: 1px;
+					border-left: 2px dashed #fca702;
+					height: 100%;
+					left: 35px;
+					top: 10px;
+					z-index: -1;
+				}
+			}
+
+			h4 {
+				display: block;
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: 600;
+				margin-bottom: 5px;
+				color: #fca702;
+				font-family: "Poppins", sans-serif;
+			}
+
+			h3 {
+				display: block;
+				font-size: 24px;
+				line-height: 34px;
+				font-weight: 600;
+				margin-bottom: 10px;
+				color: #1b1b1b;
+				margin: 0px;
+				font-family: "Poppins", sans-serif;
+			}
+
+			ul {
+				display: block;
+
+				li {
+					.tourPlansIconBlock {
+						margin-right: 10px;
+						color: #fca702;
+					}
+				}
+			}
+
+			.tourSingleSpanBlock {
+				position: absolute;
+				display: inline-block;
+				left: 5px;
+				top: 3px;
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				font-size: 22px;
+				color: #ffffff;
+				background: #fca702;
+				font-weight: 600;
+				text-align: center;
+				border-radius: 10px;
+
+				&::before {
+					position: absolute;
+					content: "";
+					background: #ffffff;
+					width: calc(100% + 10px);
+					height: calc(100% + 10px);
+					left: -5px;
+					top: -5px;
+					border-radius: 50%;
+					box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 20%);
+					z-index: -1;
+				}
+			}
+		}
+
+		h3 {
+			color: #1b1b1b;
+			font-weight: 600;
+			font-family: "Poppins", sans-serif;
+			line-height: 1.2;
+			font-size: 30px;
+			margin-top: 30px;
+		}
+
+		p {
+			margin-top: 10px;
+			font-family: "Roboto", sans-serif;
+			font-style: normal;
+			font-size: 16px;
+			font-weight: 400;
+			color: #14212b;
+			line-height: 1.8;
+		}
+
+		h4 {
+			font-size: 24px;
+			color: #1b1b1b;
+			margin: 0px;
+			font-weight: 600;
+			font-family: "Poppins", sans-serif;
+			line-height: 1.2;
+		}
+
+		.tourSingleForm {
+			margin-top: -40px;
+
+			span {
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 400;
+				color: #14212b;
+				line-height: 1.8;
+			}
+
+			textArea {
+				padding: 10px 20px;
+				border-radius: 8px;
+				box-shadow: none;
+				transition: all 0.5s ease-in-out;
+				height: 142px;
+
+				&:focus {
+					border: 1px solid #fca702;
+				}
+
+				&::placeholder {
+					font-weight: 400;
+					font-family: "Roboto";
+					font-style: normal;
+					font-size: 16px;
+					line-height: 1.8;
+					color: #6c757d;
+				}
+			}
+
+			button {
+				background: #fca702;
+				color: #fff;
+				border: none;
+				border-radius: 10px;
+				padding: 10px 25px;
+				transition: all 0.5s ease-in-out;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 1.8;
+				margin-top: 5px;
+
+				&:hover {
+					background: #051c55;
+					color: #fff;
+				}
+			}
+
+			input {
+				padding: 10px 20px;
+				border-radius: 8px;
+				box-shadow: none;
+				transition: all 0.5s ease-in-out;
+				height: 46px;
+
+				&:focus {
+					border: 1px solid #fca702;
+				}
+
+				&::placeholder {
+					font-weight: 400;
+					font-family: "Roboto";
+					font-style: normal;
+					font-size: 16px;
+					line-height: 1.8;
+					color: #6c757d;
+				}
+			}
+		}
+
+		.tourSingleGrid {
+			margin-bottom: 20px;
+
+			.tourSingleGridRowReviews {
+				margin-bottom: 30px;
+
+				img {
+					border-radius: 50%;
+					width: 100px;
+				}
+
+				h5 {
+					font-size: 18px;
+					color: #1b1b1b;
+					margin: 0px;
+					font-weight: 600;
+					font-family: "Poppins", sans-serif;
+					line-height: 1.2;
+				}
+
+				span {
+					font-size: 14px;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					color: #14212b;
+					line-height: 1.8;
+				}
+
+				p {
+					margin: 0px;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+					font-weight: 400;
+					color: #14212b;
+					line-height: 1.8;
+					margin-bottom: 5px;
+				}
+			}
+
+			.tourSingleButtonComment {
+				background-color: transparent;
+				font-weight: 600;
+				margin-top: 5px;
+				transition: all 0.3s ease-in-out;
+				color: #fca702;
+				display: block;
+				font-size: 17px;
+				width: max-content;
+				text-align: left;
+				text-transform: capitalize;
+
+				&:hover {
+					color: #14212b;
+
+				}
+			}
+
+			.tourSingleAvatar {
+				border-radius: 15px;
+				width: 766px;
+				height: 426px;
+			}
+		}
+
+		.tourSingleDivider {
+			margin-top: 115px;
+			margin-bottom: 15px;
+		}
+
+		ul {
+			display: flex;
+			text-decoration: none;
+			list-style: none;
+			margin-left: -55px;
+
+			li {
+				margin-left: 15px;
+
+				.tourSingleIcon {
+					color: #fca702;
+				}
+			}
+		}
+
+		.tourSingleDiv {
+			margin: 20px 0;
+
+			.tourSingleDiv1Left {
+				float: left;
+
+				h3 {
+					font-size: 30px;
+					color: #1b1b1b;
+					margin: 0px;
+					font-weight: 600;
+					font-family: "Poppins", sans-serif;
+					line-height: 1.2;
+					margin-bottom: 10px;
+				}
+			}
+
+			.tourSingleDiv1Right {
+				float: right;
+				text-align: right;
+
+				.tourSingleSpanPrice {
+					color: #ff0143;
+					font-size: 28px;
+					font-weight: 700;
+				}
+
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.homeblock2 {
+		position: relative;
+
+		.homeblock2DivImg {
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.774);
+				z-index: 2;
+			}
+
+			.homeblock2Img {
+				margin-top: 120px;
+				height: 436px;
+				width: 100%;
+				position: relative;
+				transition: all 0.5s;
+			}
+		}
+
+		.homeblock2Div {
+			position: absolute;
+			top: 28%;
+			left: 25%;
+			right: 25%;
+			z-index: 200;
+			text-align: center;
+
+			h2 {
+				color: #fff;
+				font-size: 40px;
+				text-transform: uppercase;
+				margin: 0px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+
+				span {
+					color: #fca702;
+				}
+			}
+
+			p {
+				color: #fff;
+				font-size: 20px;
+				margin-top: 10px;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 1.8;
+				text-transform: uppercase;
+			}
+
+			button {
+				margin-top: 25px;
+				background: #fca702;
+				color: #fff;
+				padding: 12px 30px;
+				border-radius: 50px;
+				transition: all 0.5s ease-in-out;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 1.8;
+				text-transform: capitalize;
+
+				&:hover {
+					background: #fff;
+					color: #fca702;
+				}
+			}
+		}
+	}
+}

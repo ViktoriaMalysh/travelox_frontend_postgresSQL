@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+#app {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	font-weight: 400;
+	color: #14212b;
+	line-height: 1.8;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}

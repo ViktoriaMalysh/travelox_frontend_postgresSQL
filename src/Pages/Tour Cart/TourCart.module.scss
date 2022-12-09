@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.tourCart {
+		margin-left: 40vh;
+		margin-right: 40vh;
+		margin-top: 120px;
+
+		.tourCartTableRow {
+			.tourCartImage {
+				height: 98px;
+				width: 150px;
+				border-radius: 8px;
+				margin-left: 20px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			h5 {
+				font-size: 18px;
+				color: #1b1b1b;
+				margin: 0px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+			}
+
+			span {
+				color: #383838;
+				font-size: 16px;
+			}
+
+			div {
+				vertical-align: middle;
+
+				.tourCartImageButtonAddSub {
+					width: 36px;
+					height: 36px;
+					padding: 12px;
+					margin: 5px;
+					background: #efefef;
+
+					&:disabled {
+						background-color: -internal-light-dark(
+							rgba(239, 239, 239, 0.3),
+							rgba(19, 1, 1, 0.3)
+						);
+					}
+				}
+
+				input {
+					width: 50px;
+					border-radius: 5px;
+					padding: 4px 13px;
+					border: none;
+					margin-top: -5px;
+					background: #efefef;
+					text-align: center;
+					height: 36px;
+				}
+			}
+
+			.tourCartCancel {
+				color: #383838;
+				vertical-align: middle;
+				border: none;
+				position: relative;
+				padding: 20px;
+				font-size: 16px;
+				background-color: transparent;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					color: #ff0143;
+				}
+			}
+		}
+
+		.tourCartTableHeader {
+			background: #fca702;
+		}
+
+		.tourCartTableHeaderCell {
+			vertical-align: bottom;
+			color: #fff;
+			padding: 8px 15px;
+		}
+	}
+
+	.tourCartDivFooter {
+		padding-top: 40px;
+		padding-bottom: 270px;
+
+		input {
+			box-shadow: none;
+			padding: 10px 14px;
+			border-radius: 8px;
+			display: block;
+			width: 292px;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			color: #212529;
+			background-color: #fff;
+			background-clip: padding-box;
+			border: 1px solid #ced4da;
+			appearance: none;
+			transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+			&:focus {
+				border: 1px solid #fca702;
+			}
+
+			&::placeholder {
+				font-weight: 400;
+				font-family: "Roboto";
+				font-style: normal;
+				font-size: 16px;
+				line-height: 1.8;
+				color: #6c757d;
+			}
+		}
+
+		.tourCartApply {
+			padding: 8px 14px;
+			color: #fff;
+			border-radius: 8px;
+			border: none;
+			background: #fca702;
+			transition: all 0.5s ease-in-out;
+			height: 44px;
+			font-family: "Roboto", sans-serif;
+			font-style: normal;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.8;
+			margin-left: 10px;
+
+			&:hover {
+				background: #051242;
+			}
+		}
+
+		div {
+			.tourCartTable2CellLeft,
+			.tourCartTable2CellTotal {
+				font-weight: bolder;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				color: #14212b;
+				line-height: 1.8;
+				padding-right: 30px;
+			}
+
+			.tourCartTable2CellRight {
+				text-align: right;
+			}
+
+			.tourCartTable2CellRightTotal {
+				padding-left: 30px;
+				text-align: right;
+				font-weight: bolder;
+			}
+
+			.tourCartCheckout {
+				float: right;
+				margin-top: 20px;
+				font-size: 16px;
+				color: #ffffff;
+				padding: 15px 25px;
+				line-height: 1;
+				-webkit-transition: all 0.5s;
+				transition: all 0.5s;
+				text-transform: capitalize;
+				position: relative;
+				cursor: pointer;
+				border-radius: 8px;
+				text-align: center;
+				overflow: hidden;
+				z-index: 1;
+				background-color: #fca702;
+				border: 2px solid transparent;
+				box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-weight: 400;
+
+				&:hover {
+					color: #fff;
+					background: #061847;
+				}
+			}
+		}
+	}
+}

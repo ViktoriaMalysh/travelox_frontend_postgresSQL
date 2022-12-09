@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.searchAreaSegment {
+		margin-top: -70px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1161px;
+		height: 154px;
+		background: #fff;
+		border-radius: 10px;
+		padding: 40px 30px;
+		box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+		border: none;
+
+		.searchAreaGroup {
+			.searchAreaButton {
+				width: 163px;
+				height: 46px;
+				border: none;
+				background: #fca702;
+				color: #fff;
+				border-radius: 8px;
+				padding: 9px 0;
+				transition: all 0.5s ease-in-out;
+				font-weight: 500;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				text-transform: capitalize;
+				margin-top: 33px;
+
+				&:hover {
+					color: #fff;
+					background: #061847;
+					border: 2px solid transparent;
+				}
+			}
+
+			div {
+				.searchAreaInputCalendar {
+					font-family: "Roboto", sans-serif;
+					padding: 10px 10px 10px 35px;
+					border-radius: 8px;
+					color: #6c7592;
+					box-shadow: none;
+					background-color: #fff;
+					border: 1px solid #6c7592;
+					font-weight: 400;
+					width: 163px;
+					height: 46px;
+					margin-top: 4px;
+
+					&::placeholder {
+						font-family: "Roboto", sans-serif;
+						color: #6c7592;
+						font-size: 16px;
+					}
+				}
+				.searchAreaIconCalendar {
+					color: #6c7592;
+					font-size: 18px;
+					margin-left: 7px;
+					margin-top: 9px;
+					position: absolute;
+					z-index: 1;
+					float: left;
+				}
+			}
+
+			.searchAreaCalendar {
+				margin-top: 50px;
+				position: absolute;
+				top: -280px;
+			}
+
+			label {
+				color: #6c7592;
+				font-weight: 400;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+			}
+
+			.searchAreaInput {
+				font-family: "Roboto", sans-serif;
+				padding: 10px 10px 10px 35px;
+				border-radius: 8px;
+				color: #6c7592;
+				box-shadow: none;
+				background-color: #fff;
+				border: 1px solid #6c7592;
+				font-weight: 400;
+				width: 257px;
+				height: 46px;
+				margin-right: 8px;
+
+				&::placeholder {
+					font-family: "Roboto", sans-serif;
+					color: #6c7592;
+					font-size: 16px;
+				}
+			}
+
+			.searchAreaIcon {
+				color: #6c7592;
+				font-size: 18px;
+				margin-left: 7px;
+				margin-top: 5px;
+				position: absolute;
+				z-index: 1;
+				float: left;
+			}
+
+			.searchAreaSelect {
+				min-width: 257px;
+				height: 46px;
+				line-height: 20px;
+				border-radius: 8px;
+				border-color: #6c7592;
+				padding-left: 35px;
+				font-size: 1rem;
+				font-weight: 400;
+				color: #6c7592;
+				float: left;
+				padding-right: 30px;
+				text-align: left !important;
+				transition: all 0.2s ease-in-out;
+			}
+		}
+	}
+
+	.react-datepicker-wrapper {
+		background-color: red;
+	}
+}

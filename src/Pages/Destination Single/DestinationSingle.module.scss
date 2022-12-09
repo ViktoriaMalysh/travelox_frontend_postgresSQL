@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #fca702;
+
+:global(#app) {
+	.destinationSingle {
+		margin-left: 39.5vh;
+		margin-right: 39vh;
+		margin-top: 100px;
+		position: relative;
+		margin-bottom: 150px;
+
+		.destinationSingleAvatar {
+			border-radius: 15px;
+			width: 766px;
+			height: 426px;
+		}
+
+		h2 {
+			margin-top: 30px;
+			font-weight: 800;
+			font-size: 35px;
+			color: #1b1b1b;
+			font-family: "Poppins";
+			line-height: 1.2;
+		}
+
+		p {
+			margin-top: 20px;
+			font-family: "Roboto", sans-serif;
+			font-style: normal;
+			font-size: 16px;
+			font-weight: 400;
+			color: #14212b;
+			line-height: 1.8;
+		}
+
+		.destinationSingleGridImages {
+			margin-top: 30px;
+
+			img {
+				border-radius: 15px;
+			}
+		}
+
+		h3 {
+			font-size: 25px;
+			font-weight: 700;
+			color: #1b1b1b;
+			font-family: "Poppins";
+			line-height: 1.2;
+		}
+
+		.destinationSingleSegment {
+			background: #fff;
+			border-radius: 10px;
+			height: max-content;
+			padding: 35px 30px;
+			display: block;
+			box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+			width: 361px;
+			float: left;
+			border: none;
+			text-transform: capitalize;
+			margin: 0;
+			margin-top: 0px;
+
+			.destinationSingleDivTours {
+				margin-top: 25px;
+				background: red;
+				// color: red;
+
+				.destinationSingleDivTourImage {
+					img {
+						border-radius: 10px;
+						height: 68px;
+						float: left;
+					}
+				}
+
+				.destinationSingleDivTour {
+					float: right;
+
+					h6 {
+						color: #ff0143;
+						font-size: 14px;
+						font-weight: 600;
+						font-family: "Poppins", sans-serif;
+						line-height: 1.2;
+						margin-bottom: 7px;
+						margin-top: 0;
+					}
+
+					h5 {
+						font-size: 18px;
+						color: #1b1b1b;
+						margin-bottom: 5px;
+						margin-top: 0;
+						font-weight: 600;
+						font-family: "Poppins", sans-serif;
+						line-height: 1.2;
+					}
+
+					span {
+						font-size: 14px;
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						color: #14212b;
+						line-height: 1.8;
+					}
+				}
+			}
+
+			button {
+				display: block;
+				width: 100%;
+				padding: 10px 20px;
+				border-radius: 10px;
+				border: 2px solid #f1a32e;
+				margin-bottom: 20px;
+				color: #051242;
+				background-color: transparent;
+				height: 52px;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 1.8;
+				text-align: left;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					color: #f1a32e;
+				}
+			}
+
+			h4 {
+				color: #000;
+				padding-bottom: 10px;
+				margin-bottom: 30px;
+				position: relative;
+
+				font-size: 24px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+
+				&::before {
+					position: absolute;
+					content: "";
+					width: 30px;
+					border-bottom: 3px solid #fca702;
+					bottom: 0;
+					left: 0;
+				}
+
+				&::after {
+					position: absolute;
+					content: "";
+					width: 5px;
+					border-bottom: 3px solid #fca702;
+					bottom: 0;
+					left: 35px;
+				}
+			}
+
+			.destinationSingleLink {
+				border-bottom: 1px solid #eee;
+			}
+			.destinationSingleLinkEnd {
+				border-bottom: none;
+			}
+
+			.destinationSingleLink,
+			.destinationSingleLinkEnd {
+				display: block;
+				padding: 8px 0 8px 20px;
+				position: relative;
+				transition: all 0.5s ease-in-out;
+
+				color: #14212b;
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 1.8;
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 8px;
+					height: 8px;
+					background: #fca702;
+					left: 0;
+					top: 19px;
+					border-radius: 3px;
+				}
+
+				&:hover {
+					padding-left: 25px;
+					color: #fca702;
+				}
+			}
+		}
+
+		table {
+			border-radius: 15px;
+
+			.tourSingleTableCellLeft {
+				width: 300px;
+				padding-left: 30px;
+			}
+
+			.tourSingleTableCellRight {
+				padding-left: 45px;
+				position: relative;
+				display: block;
+				font-size: 17px;
+				font-weight: 500;
+				color: #888888;
+			}
+
+			.tourSingleIconTrue {
+				color: #198754 !important;
+				padding-right: 25px;
+			}
+		}
+	}
+}

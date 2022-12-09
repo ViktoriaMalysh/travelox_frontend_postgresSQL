@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.tourPackage {
+		margin-left: 39.5vh;
+		margin-right: 39vh;
+		margin-top: 100px;
+		position: relative;
+		margin-bottom: 150px;
+
+  }
+}

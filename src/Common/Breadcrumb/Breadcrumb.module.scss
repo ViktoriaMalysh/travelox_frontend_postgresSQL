@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.breadcrumb {
+		height: 44vh;
+		background: url(../../assets/breadcrumb.jpg);
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(8, 39, 64, 0.5);
+			z-index: 2;
+		}
+
+		h2 {
+			font-size: 40px;
+			color: #fff;
+			font-weight: 700;
+			margin-bottom: 10px;
+			margin-top: 18vh;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-family: "Poppins", sans-serif;
+			line-height: 1.2;
+			z-index: 3;
+		}
+
+		.breadcrumbDiv {
+			z-index: 3;
+
+			.breadcrumbLink,
+			p {
+				position: relative;
+				display: inline-block;
+				font-weight: 400;
+				text-transform: capitalize;
+				z-index: 3;
+			}
+
+			.breadcrumbLink {
+				color: #ffffff;
+				transition: all 0.5s ease-in-out;
+
+				&:hover {
+					color: #fca702;
+				}
+			}
+
+			p {
+				color: #fca702;
+			}
+
+			.breadcrumbIcon {
+				color: #ffffff;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		}
+	}
+}

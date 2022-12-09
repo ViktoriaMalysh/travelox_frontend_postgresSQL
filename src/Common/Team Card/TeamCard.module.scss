@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.tourGuidesGridColumn {
+		position: relative;
+		margin-bottom: 60px;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			transform: translateY(-10px);
+		}
+
+		img {
+			width: 272px;
+			height: 363px;
+			border-radius: 15px;
+		}
+
+		.tourGuidesLink {
+			color: #051242;
+			font-size: 20px;
+			font-weight: 600;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				color: #fca702;
+			}
+		}
+
+		.tourGuidesSpan {
+			color: #fca702;
+			font-weight: 500;
+			font-size: 14px;
+			display: block;
+		}
+
+		.tourGuidesBlock {
+			position: absolute;
+			background: #fff;
+			border-radius: 15px;
+			text-align: center;
+			padding: 20px;
+			left: 35px;
+			right: 20px;
+			bottom: -30px;
+			box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+			width: 220px;
+			height: 141px;
+
+			div {
+				text-align: center;
+				display: inline-block;
+				text-align: center;
+
+				.tourGuidesIcon {
+					margin: 6px;
+					color: #fca702;
+					transition: all 0.5s ease-in-out;
+
+					&:hover {
+						color: #051242;
+					}
+				}
+			}
+		}
+	}
+}

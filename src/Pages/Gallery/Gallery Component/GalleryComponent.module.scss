@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+  .galleryGrid {
+    margin-left: 40vh;
+    margin-right: 40vh;
+    margin-top: 100px;
+  }
+
+    .galleryGridColumn {
+      .galleryGridColumnDivImg1 {
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s;
+        margin-bottom: 25px;
+
+        .galleryGridColumnDivImg {
+          border-radius: 15px;
+          overflow: hidden;
+          position: relative;
+          transition: all 0.5s;
+          display: block;
+          transition: all 0.3s ease-out 0s;
+
+          &:hover {
+            .galleryGridButton {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: all 0.3s ease-out 0s;
+          }
+
+          &:hover:after {
+            opacity: 1;
+          }
+
+          img {
+            width: max-content;
+            border-radius: 15px;
+            transition: all 0.5s;
+
+            &:hover {
+              background: #000;
+              overflow: hidden;
+              transition: all 0.3s ease-out 0s;
+            }
+          }
+        }
+      }
+
+      .galleryGridButton {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in-out;
+        z-index: 100;
+
+        .galleryGridIcon {
+          position: absolute;
+          top: 19px;
+        }
+      }
+
+      .galleryGridColumnDiv {
+        position: absolute;
+        top: 70%;
+        left: 40px;
+        z-index: 100;
+
+        h3 {
+          color: #fff;
+          font-size: 30px;
+          margin: 0px;
+          font-weight: 600;
+          font-family: "Poppins", sans-serif;
+          line-height: 1.2;
+          text-align: left;
+        }
+
+        span {
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.8;
+          float: left;
+        }
+      }
+    }
+  
+  .galleryButton {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 15px 25px;
+    line-height: 1;
+    transition: all 0.5s;
+    text-transform: capitalize;
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #fca702;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &:hover {
+      color: #fff;
+      background: #061847;
+    }
+
+    .galleryIcon {
+      margin-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.tourBooking {
+		margin-left: 38vh;
+		margin-right: 38vh;
+		margin-top: 120px;
+		margin-bottom: 130px;
+
+		.tourBookingSegmentLeft {
+			float: left;
+			width: 770px;
+			border: none;
+			padding: 30px;
+			border-radius: 12px;
+			margin-bottom: 0px;
+			box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+			background: #fff;
+
+			h4 {
+				margin-bottom: 30px;
+				font-size: 24px;
+				color: #1b1b1b;
+				margin: 0px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+				text-transform: capitalize;
+			}
+
+			.tourBookingSegmentLeftForm {
+				margin-top: 20px;
+				margin-bottom: 10px;
+
+				.tourCartApply {
+					padding: 8px 14px;
+					color: #fff;
+					border-radius: 8px;
+					border: none;
+					background: #fca702;
+					transition: all 0.5s ease-in-out;
+					height: 44px;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1.8;
+					margin-left: 10px;
+
+					&:hover {
+						background: #051242;
+					}
+				}
+
+				h5 {
+					color: #1b1b1b;
+					font-weight: 600;
+					font-family: "Poppins", sans-serif;
+					line-height: 1.2;
+					font-size: 18px;
+					padding-top: 20px;
+					padding-bottom: 10px;
+				}
+
+				.tourBookingCheckbox {
+					display: block;
+					margin-bottom: 10px;
+					// padding: 0;
+					color: #1b1b1b;
+					font-weight: 600;
+					font-family: "Poppins", sans-serif;
+					// line-height: 1.2;
+				}
+
+				.tourPackageAreaCalendar {
+					margin-top: 50px;
+					position: absolute;
+					top: 25px;
+					z-index: 200;
+				}
+
+				label {
+					color: #999;
+					font-weight: 400;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+					line-height: 1.8;
+					margin-bottom: 0;
+				}
+
+				.tourPackageAreaSelect,
+				input {
+					padding: 10px 18px;
+					border-radius: 8px;
+					box-shadow: none;
+					display: block;
+					width: 100%;
+					font-family: "Roboto", sans-serif;
+					height: 46px;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1.5;
+					color: #212529;
+					background-color: #fff;
+					border: 1px solid #ced4da;
+					appearance: none;
+					transition: border-color 0.15s ease-in-out,
+						box-shadow 0.15s ease-in-out;
+
+					&:focus {
+						border: 1px solid #fca702;
+					}
+
+					&::placeholder {
+						font-weight: 400;
+						font-family: "Roboto";
+						font-style: normal;
+						font-size: 16px;
+						line-height: 1.8;
+						color: #6c757d;
+					}
+				}
+
+				.tourBookingSegmentLeftTextArea {
+					label {
+						color: #999;
+						font-weight: 400;
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-size: 16px;
+						line-height: 1.8;
+						margin-bottom: 0;
+					}
+
+					textarea {
+						padding: 10px 18px;
+						border-radius: 8px;
+						box-shadow: none;
+						display: block;
+						width: 100%;
+						height: 142px;
+						font-size: 16px;
+						font-family: "Roboto", sans-serif;
+						font-weight: 400;
+						line-height: 1.5;
+						color: #212529;
+						background-color: #fff;
+						background-clip: padding-box;
+						border: 1px solid #ced4da;
+						appearance: none;
+						transition: border-color 0.15s ease-in-out,
+							box-shadow 0.15s ease-in-out;
+
+						&::placeholder {
+							color: rgb(133, 131, 131);
+						}
+					}
+				}
+
+				.tourBookingSegmentLeftInput {
+					label {
+						color: #999;
+						font-weight: 400;
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-size: 16px;
+						line-height: 1.8;
+						margin-bottom: 0;
+						text-transform: capitalize;
+					}
+
+					input {
+						padding: 10px 18px;
+						border-radius: 8px;
+						box-shadow: none;
+						display: block;
+						width: 100%;
+						font-family: "Roboto", sans-serif;
+						height: 46px;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 1.5;
+						color: #212529;
+						background-color: #fff;
+						border: 1px solid #ced4da;
+						appearance: none;
+						transition: border-color 0.15s ease-in-out,
+							box-shadow 0.15s ease-in-out;
+
+						&::placeholder {
+							color: rgb(133, 131, 131);
+						}
+					}
+				}
+			}
+		}
+
+		.tourBookingSegmentRight {
+			float: right;
+			width: 360px;
+			background: #fff;
+			padding: 30px;
+			border: none;
+			border-radius: 12px;
+			margin-bottom: 0px;
+			box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+			margin-top: 0px;
+
+			h4 {
+				margin-bottom: 30px;
+				font-size: 24px;
+				color: #1b1b1b;
+				margin: 0px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+				text-transform: capitalize;
+			}
+
+			ul {
+				display: block;
+				text-transform: capitalize;
+
+				li {
+					margin-left: -40px;
+					margin-bottom: 10px;
+					list-style: none;
+					display: block;
+
+					.tourBookingRightStrong {
+						float: left;
+						font-weight: bolder;
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-size: 16px;
+						color: #14212b;
+						line-height: 1.8;
+					}
+
+					.tourBookingRightSpan {
+						float: right;
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-size: 16px;
+						font-weight: 400;
+						color: #14212b;
+						line-height: 1.8;
+					}
+				}
+
+				.tourBookingRightDivider {
+					margin-top: 40px;
+					margin-bottom: -15px;
+				}
+
+				.tourBookingRightButton {
+					font-size: 16px;
+					float: right;
+					display: block;
+					color: #ffffff;
+					padding: 15px 25px;
+					line-height: 1;
+					transition: all 0.5s;
+					text-transform: capitalize;
+					position: relative;
+					border-radius: 8px;
+					text-align: center;
+					overflow: hidden;
+					z-index: 1;
+					background-color: #fca702;
+					border: 2px solid transparent;
+					box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+					margin-top: 22%;
+					margin-right: -40px;
+
+					&:hover {
+						color: #fff;
+						background: #061847;
+					}
+				}
+			}
+		}
+	}
+}

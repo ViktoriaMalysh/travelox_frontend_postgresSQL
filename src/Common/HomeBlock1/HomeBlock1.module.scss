@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+	.homeBlok1Items {
+		margin-top: 110px;
+		margin-left: 39vh;
+		margin-right: 39vh;
+
+		.homeBlok1ItemsSegment {
+			background: #fff;
+			padding: 20px 30px;
+			border-radius: 10px;
+			margin-bottom: 25px;
+			position: relative;
+			box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+			border: none;
+			width: 371px;
+			height: 244px;
+
+			div {
+				margin-bottom: 80px;
+
+				.homeBlok1ItemsIcon {
+					color: #fca702;
+					border-radius: 10px;
+					font-size: 40px;
+					float: left;
+				}
+
+				.homeBlok1ItemsSpan {
+					position: absolute;
+					top: 35px;
+					right: 20px;
+					font-size: 50px;
+					line-height: 0.8;
+					font-weight: 800;
+					color: transparent;
+					-webkit-text-stroke: 2px #cfd3de;
+					float: right;
+					cursor: default;
+				}
+			}
+
+			h3 {
+				font-size: 22px;
+				margin-bottom: 10px;
+				color: #071c55;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+			}
+
+			p {
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 400;
+				color: #14212b;
+				line-height: 1.8;
+			}
+		}
+	}
+}

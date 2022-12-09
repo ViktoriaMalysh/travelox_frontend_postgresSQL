@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+  .headerDiv {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+
+    .headerMenuTop {
+      padding-left: 38.5vh;
+      padding-right: 37.5vh;
+
+      .headerItemsTop {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.8;
+        transition: all 0.5s ease-in-out;
+
+        .headerTopButton {
+          background-color: transparent;
+          height: 43px;
+          padding: 0 15px 0 15px;
+          border: none;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.8;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            color: #fca702;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+
+        .headerDropdown {
+          text-transform: uppercase;
+          color: #fff;
+          height: 10px;
+          margin-right: -40px;
+          margin-left: -10px;
+
+          .headerDropdownMenu {
+            border-radius: 10px;
+            width: max-content;
+
+            .headerDropdownItem {
+              text-transform: uppercase;
+
+              &:hover {
+                background-color: #fca702;
+                transition: all 0.5s ease-in-out;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+
+        .iconHeaderTop {
+          color: #fff;
+          margin-top: -13px;
+          transition: all 0.5s ease-in-out;
+        }
+
+        .iconHeaderTopLinks {
+          color: #fff;
+          font-size: 19px;
+          margin-top: -20px;
+          transition: all 0.5s ease-in-out;
+          margin-right: -15px;
+        }
+
+        &:hover {
+          color: #fca702;
+
+          .iconHeaderTop,
+          .iconHeaderTopLinks {
+            color: #fca702;
+          }
+        }
+      }
+    }
+
+    .headerMenu {
+      padding-left: 38vh;
+      padding-right: 39.5vh;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: transparent;
+
+      img {
+        width: 220px;
+        cursor: pointer;
+      }
+
+      .headerItems {
+        vertical-align: middle;
+        height: 80px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 15px;
+        font-weight: 700;
+        color: #051c55;
+        line-height: 1.8;
+        margin-right: 25px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          color: #fca702;
+        }
+      }
+
+      .headerItemsWhite {
+        vertical-align: middle;
+        height: 80px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.8;
+        margin-right: 25px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          color: #fca702;
+        }
+      }
+
+      button {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 15px 15px;
+        line-height: 1;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        position: relative;
+        cursor: pointer;
+        border-radius: 8px;
+        text-align: center;
+        z-index: 1;
+        background-color: #fca702;
+        border: 2px solid transparent;
+        box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+        width: 156px;
+        height: 49px;
+        margin-left: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        &:hover {
+          background: #051242;
+        }
+
+        .headerIcon {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

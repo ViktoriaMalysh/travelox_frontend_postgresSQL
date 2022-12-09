@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS */
+$primary-color: #fafe28;
+$primary-color-hover: #ffdd00;
+
+:global(#app) {
+
+	.searchAreaCalendar {
+		margin-top: 50px;
+		position: absolute;
+		top: -280px;
+	}
+
+
+	.tourPackage {
+		margin-left: 39.5vh;
+		margin-right: 39vh;
+		margin-top: 100px;
+		position: relative;
+		margin-bottom: 150px;
+
+		.tourPackageSegmentLeft {
+			background: #fff;
+			border-radius: 10px;
+			height: max-content;
+			padding: 35px 30px;
+		}
+
+		.tourPackageSegmentLeft,
+		.tourPackageSegmentLeftImage {
+			display: block;
+			box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+			width: 361px;
+			float: left;
+			border: none;
+			text-transform: capitalize;
+			margin: 0;
+			margin-top: 0px;
+
+			.tourPackageImage {
+				width: 361px;
+			}
+
+			.tourPackageIcon {
+				i {
+					// needs improvement:
+
+					font-size: 18px;
+				}
+			}
+
+			.tourPackageCheckbox {
+				display: block;
+				margin-top: 20px;
+
+				// needs improvement:
+
+				// input[type=checkbox] {
+				// 	background: red;
+				// 	height: 20px;
+				// }
+
+				label {
+					color: #999;
+					font-weight: 400;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+				}
+			}
+
+			.tourPackageFormField {
+
+				.tourPackageAreaCalendar {
+					margin-top: 50px;
+					position: absolute;
+					top: 120px;
+					z-index: 200;
+				}
+				
+				
+				.inputDatePicker {
+					background-color: red;
+				}
+
+				.tourPackageButtonSearch {
+					width: 100%;
+					height: 46px;
+					border: none;
+					background: #fca702;
+					color: #fff;
+					border-radius: 8px;
+					padding: 9px 0;
+					transition: all 0.5s ease-in-out;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1.8;
+					margin-top: 10px;
+
+					&:hover {
+						background: #102b3e;
+						color: #fff;
+					}
+				}
+
+				label {
+					color: #6c7592;
+					cursor: pointer;
+					font-weight: 400;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-size: 16px;
+					line-height: 1.8;
+				}
+
+				.tourPackageAreaSelect, input {
+					padding: 10px 10px 10px 35px;
+					border-radius: 8px;
+					height: 46px;
+					color: #6c7592;
+					box-shadow: none;
+					display: block;
+					min-width: 100%;
+					font-weight: 400;
+					line-height: 1.5;
+					background-color: #fff;
+					background-clip: padding-box;
+					border: 1px solid #6c7592;
+					appearance: none;
+					transition: 0.5s;
+
+					&:focus {
+						border: 1px solid #fca702;
+					}
+
+					&::placeholder {
+						font-weight: 400;
+						font-family: "Roboto";
+						font-style: normal;
+						font-size: 16px;
+						line-height: 1.8;
+						color: #6c757d;
+					}
+				}
+			}
+
+			h4 {
+				color: #1b1b1b;
+				margin: 0px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.topToursPagination {
+			float: right;
+		}
+
+		.tourPackageSegmentRight {
+			// margin-top: 30px;
+
+			.tourPackageDivLoader {
+				padding: 50px;
+				min-width: 100%;
+
+				.tourPackageLoader {
+					color: #fca702;
+				}
+			}
+
+			.topToursH5 {
+				color: #1b1b1b;
+				margin: 0px;
+				font-weight: 600;
+				font-family: "Poppins", sans-serif;
+				line-height: 1.2;
+				font-size: 18px;
+			}
+
+			.tourPackageSelect {
+				border-radius: 8px;
+				border: 1px solid #e8e8e8;
+				display: block;
+				font-size: 14px;
+				font-weight: 400;
+				height: 42px;
+				line-height: 18px;
+				padding-left: 18px;
+				padding-right: 30px;
+				position: relative;
+				transition: all 0.2s ease-in-out;
+				min-width: 144px;
+				margin-bottom: -20px;
+
+				div {
+					.visible {
+						background-color: red;
+					}
+				}
+			}
+		}
+	}
+}
